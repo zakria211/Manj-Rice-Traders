@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manj Rice Traders | Best Pakistan Rice Trader | Quality Basmati</title>
+    
+    <meta name="description" content="Manj Rice Traders offers the best quality 1121 Kainat and Super Basmati rice in Pakistan with free home delivery. Contact: 923454254216">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --green: #064e3b; --gold: #fbbf24; --light: #f9fafb; }
+        * { box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { margin: 0; background: var(--light); color: #111827; }
+        
+        /* Navbar */
+        nav { background: var(--green); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .logo { color: var(--gold); font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: bold; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.9rem; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1350&q=80'); 
+                height: 80vh; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px; }
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0; color: var(--gold); }
+        .hero p { font-size: 1.2rem; margin: 20px 0; max-width: 700px; }
+
+        /* Delivery Bar */
+        .delivery-bar { background: var(--gold); padding: 20px; text-align: center; font-weight: bold; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+
+        /* Products Section */
+        .container { max-width: 1200px; margin: auto; padding: 60px 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: var(--green); }
+        .date-box { background: #ef4444; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; margin-bottom: 20px; display: inline-block; }
+
+        .rice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid #eee; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 25px; text-align: center; }
+        .card h3 { color: var(--green); font-size: 1.5rem; margin: 0 0 10px; }
+        .price { font-size: 2rem; font-weight: bold; color: #b45309; margin: 15px 0; }
+
+        /* Order Button */
+        .buy-btn { display: block; background: #25d366; color: white; padding: 15px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.1rem; transition: 0.3s; }
+        .buy-btn:hover { background: #128c7e; }
+
+        footer { background: var(--green); color: white; padding: 50px 20px; text-align: center; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); text-decoration: none; z-index: 1000; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MANJ RICE TRADERS</div>
+        <div>
+            <a href="#rates">Daily Rates</a>
+            <a href="#delivery">Home Delivery</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Manj Rice Traders</h1>
+        <p>Premium Branded Bags | Export Quality | Directly from Mills</p>
+        <p>Email: <b>manjzakri@gmail.com</b></p>
+        <a href="#rates" style="background:var(--gold); color:black; padding:12px 25px; text-decoration:none; border-radius:5px; font-weight:bold;">View Today's Rates</a>
+    </header>
+
+    <div class="delivery-bar" id="delivery">
+        <span>✅ FREE HOME DELIVERY</span>
+        <span>✅ CASH ON DELIVERY</span>
+        <span>✅ 100% PURE BASMATI</span>
+    </div>
+
+    <div class="container" id="rates">
+        <div style="text-align: center;">
+            <div class="date-box">Rate Date: <span id="today-date"></span></div>
+            <h2 class="section-title">Hamari Best Varieties</h2>
+        </div>
+
+        <div class="rice-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=600" alt="Kainat Rice">
+                <div class="card-content">
+                    <h3>1121 Kainat Steam</h3>
+                    <p>Manj Traders Special Long Grain</p>
+                    <div class="price">Rs. <span id="kainat-rate">390</span>/kg</div>
+                    <a href="https://wa.me/923454254216?text=I%20want%20to%20order%20Kainat%20Steam" class="buy-btn">Buy Now via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600" alt="Basmati Rice">
+                <div class="card-content">
+                    <h3>Super Basmati (Aged)</h3>
+                    <p>2 Years Naturally Aged Aroma</p>
+                    <div class="price">Rs. <span id="basmati-rate">350</span>/kg</div>
+                    <a href="https://wa.me/923454254216?text=I%20want%20to%20order%20Super%20Basmati" class="buy-btn">Buy Now via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/02/05/15/34/pasta-1181189_960_720.jpg" alt="Sella Rice">
+                <div class="card-content">
+                    <h3>Golden Sella</h3>
+                    <p>Ideal for Biryani & Commercial Use</p>
+                    <div class="price">Rs. <span id="sella-rate">320</span>/kg</div>
+                    <a href="https://wa.me/923454254216?text=I%20want%20to%20order%20Golden%20Sella" class="buy-btn">Buy Now via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>MANJ RICE TRADERS</h2>
+        <p>Best Pakistan Rice Trader since 2014</p>
+        <p>📍 NOWSHERA VIRKAN, Punjab, Pakistan</p>
+        <p>📞 +92 345 4254216 | ✉️ manjzakria@gmail.com</p>
+    </footer>
+
+    <a href="https://wa.me/923454254216" class="whatsapp-float">WP</a>
+
+    <script>
+        // Automatic Date
+        document.getElementById('today-date').innerText = new Date().toLocaleDateString('en-GB');
+    </script>
+
+</body>
+</html>
