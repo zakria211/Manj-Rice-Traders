@@ -109,20 +109,38 @@
             </div>
         </div>
     </div>
+<div style="background: #fff5f5; border: 2px solid #e64e3b; padding: 20px; border-radius: 10px; margin: 20px 5%; text-align: center; font-family: sans-serif;">
+    <h3 style="color: #e64e3b; margin-top: 0;">⚠️ Zaroori Ittala (Payment Policy)</h3>
+    <p style="font-size: 1.1rem; color: #333; line-height: 1.6;">
+        Manj Rice Traders ki policy ke mutabiq, <strong>Delivery se pehle Payment lazmi hai.</strong> <br>
+        Order confirm karne ke liye aapko raqam Advance ada karni hogi. Shukriya!
+    </p>
+    
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
+        <div style="background: white; padding: 10px; border-radius: 5px; border: 1px solid #ddd; min-width: 150px;">
+            <strong style="display: block; color: #064e3b;">JazzCash / Easypaisa</strong>
+            <span>0345 4254216</span>
+        </div>
+        <div style="background: white; padding: 10px; border-radius: 5px; border: 1px solid #ddd; min-width: 150px;">
+            <strong style="display: block; color: #064e3b;">Bank Transfer</strong>
+            <span>WhatsApp for Details</span>
+        </div>
+    </div>
+</div>
 
-    <footer>
+<footer>
+    <h2>MANJ RICE TRADERS</h2>
+    ...
         <h2>MANJ RICE TRADERS</h2>
-        <p>Best Pakistan Rice Trader since 2026</p>
+        <p>Best Pakistan Rice Trader since <span id="today-date"></span></p>
         <p>📍 Galla Mandi, Punjab, Pakistan</p>
         <p>📞 +92 345 4254216 | ✉️ manjzakri@gmail.com</p>
     </footer>
 
     <a href="https://wa.me/923454254216" class="whatsapp-float">WP</a>
-
-    <script>
-        // Automatic Date
-        document.getElementById('today-date').innerText = new Date().toLocaleDateString('en-GB');
-    </script>
-
+<script>
+    // Ye code date ko automatic update karega
+    document.getElementById('today-date').innerText = new Date().getFullYear();
+</script>
 </body>
 </html>
